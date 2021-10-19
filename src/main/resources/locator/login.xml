@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+    <!-- 登录界面 -->
+    <page pageName="Login" url="https://172.18.2.113:8443/ui-infra" defaultTimeOut="1">
+        <!--<locate name="" by="" value="" timeOut=""/>-->
+        <locator name="账号" by="id" value="username" timeOut="1"/>
+        <locator name="密码" by="xpath" value="//*[@id=&quot;ccs-app&quot;]/div[1]/div/tempalte/div[3]/div/input" timeOut="3"/>
+        <locator name="登录按钮" by="xpath" value="//*[@id=&quot;ccs-app&quot;]/div[1]/div/button" timeOut=""/>
+    </page>
+</pages>

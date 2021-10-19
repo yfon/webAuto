@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyProjectSuite" parallel="classes" thread-count="1">
+
+    <test verbose="2" preserve-order="true" name="测试获取数据">
+        <classes>
+            <class name="com.yf.cases.role" />
+        </classes>
+    </test>
+
+    <listeners>
+        <!-- 数据源监听(修改@Test注解中的部分配置) -->
+        <listener class-name="com.yf.listener.DataSourceListener"/>
+        <listener class-name="com.yf.listener.TestFailedListener"/>
+    </listeners>
+</suite> <!-- Suite -->

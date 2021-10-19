@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+    <!-- 登录界面 -->
+    <page pageName="role" url="https://172.18.2.113:8443/ui-infra/#/system/role" defaultTimeOut="1">
+        <!--<locate name="" by="" value="" timeOut=""/>-->
+        <locator name="创建角色" by="xpath" value="//div[@id=&quot;app&quot;]/div/div[2]/div[2]/section/div[1]/div/div[1]/div/div[1]/div/div/div[2]/span/button" timeOut=""/>
+        <locator name="角色名" by="xpath" value="//div[@aria-label=&quot;创建&quot;]/div[2]/form/div[1]/div/div[1]/input" timeOut=""/>
+        <locator name="角色类型下拉框" by="xpath" value="//div[@aria-label=&quot;创建&quot;]/div[2]/form/div[2]/div/div/div[1]/input" timeOut=""/>
+        <locator name="角色类型" by="xpath" value="/html/body/div[last()]/div/div/ul/li[1]" timeOut=""/>
+        <locator name="角色描述" by="xpath" value="//div[@aria-label=&quot;创建&quot;]/div[2]/form/div[3]/div/div/textarea" timeOut=""/>
+        <locator name="创建" by="xpath" value="//div[@aria-label=&quot;创建&quot;]/div[last()]/div/span[2]/button" timeOut=""/>
+    </page>
+</pages>
